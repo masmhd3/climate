@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--grayy);
+}
+:root{
+    --broun: #814e26;
+    --grayy: rgb(211, 211, 211) ;
+}
+body{
+    min-height: 300vh;
+    background-color:#000 ;
+    position: relative;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+main .background{
+    background-image: url('climate-change.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+main .background::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    
+}
+main .background p{
+    z-index: 5;
+    font-size: 18px;
+    color: var(--grayy);
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+main .background h1{
+    z-index: 5;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
+    color: var(--broun);
+    text-shadow: 5px 5px 5px #000;
+    font-style: italic;
+}
+main .background .a{
+    z-index: 5;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    
+    opacity: .9;
+    padding: 10px 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px  #050505;
+}
+main .background .a:hover{
+    background-color: var(--broun);
+}
+
+/* content */
+.content{
+    padding: 30px 30px;
+    max-width: 1300px;
+}
+.content h1{
+    text-align: center;
+    margin: 20px 0 50px 0;
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 5px 5px 5px #222;
+    color: var(--broun);
+}
+.con{
+    padding: 5px;
+}
+.con h2{
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    font-style: italic;
+    color: var(--broun);
+    text-shadow: 5px 5px 5px #222;
+}
+.con p{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .8px;
+    margin: 0 0 35px 0;
+    font-style: italic;
+    color: var(--grayy);
+    line-height: 1.5;
+}
+.con .ul-frist{
+    list-style: none;
+}
+.con .ul-frist .ul-inner{
+    margin-left: 10px;
+}
+.con .ul-frist .ul-inner h2{
+    font-size: 22px;
+    color: var(--grayy);
+}
+
+/* arrow */
+.arrow{
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 999;
+    display: none;
+}
+.arrow i{
+    background-color: #633919;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: .2s;
+    
+}
+
+.arrow i:hover{
+    scale: 1.1;
+}
